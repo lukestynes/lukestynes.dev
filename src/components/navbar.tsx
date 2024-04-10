@@ -27,10 +27,10 @@ export default function Navbar() {
             className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
           >
             <li>
-              <Link href="#about">about</Link>
+              <Link href="/about">about</Link>
             </li>
             <li>
-              <Link href="#projects">projects</Link>
+              <Link href="/projects">projects</Link>
             </li>
             <li>
               <Link href="/links">links</Link>
@@ -45,17 +45,17 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <Link href="/" className="btn btn-ghost text-xl">
+        <Link href="/" className="btn btn-ghost no-animation text-xl">
           <Image src="/img/logo.svg" alt="stynes." width="150" height="60" />
         </Link>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link href="#about">about</Link>
+            <Link href="/about">about</Link>
           </li>
           <li>
-            <Link href="#projects">projects</Link>
+            <Link href="/projects">projects</Link>
           </li>
           <li>
             <Link href="/links">links</Link>
@@ -63,7 +63,7 @@ export default function Navbar() {
         </ul>
         <Link
           href="/contact"
-          className="btn btn-primary rounded-3xl font-medium text-white"
+          className="btn btn-primary no-animation rounded-3xl font-medium text-white"
         >
           Get in Touch
         </Link>

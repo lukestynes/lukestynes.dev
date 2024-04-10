@@ -3,6 +3,7 @@ import "@/styles/globals.css";
 import { Inter } from "next/font/google";
 import { GeistSans } from "geist/font/sans";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={`${GeistSans.className}`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
