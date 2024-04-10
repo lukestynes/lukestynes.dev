@@ -1,10 +1,36 @@
+import Clock from "@/components/clock";
+import IconText from "@/components/icontext";
 import Image from "next/image";
 import Link from "next/link";
+import Lenis from "@studio-freight/lenis";
+
+const socialLinks = [
+  {
+    src: "/img/github.svg",
+    alt: "GitHub Logo",
+    text: "GitHub",
+  },
+  {
+    src: "/img/linkedin.svg",
+    alt: "LinkedIn Logo",
+    text: "LinkedIn",
+  },
+  {
+    src: "/img/instagram.svg",
+    alt: "Instagram Logo",
+    text: "Instagram",
+  },
+  {
+    src: "/img/spotify.svg",
+    alt: "Spotify Logo",
+    text: "Spotify",
+  },
+];
 
 export default function HomePage() {
   return (
     <main>
-      <div id="hero" className="hero my-10 lg:m-0 lg:min-h-screen">
+      <div id="hero" className="hero my-10 min-h-[calc(100vh-68px)] lg:m-0">
         <div className="">
           <Image src="/img/hero.svg" alt="hero" width="844" height="720" />
         </div>
@@ -19,7 +45,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="py-20">
+      <div className="py-20" id="about">
         <h1 className="mb-10 text-center text-5xl font-extrabold">ABOUT ME</h1>
         <div className="hero">
           <div className="hero-content flex-col lg:flex-row">
@@ -28,7 +54,7 @@ export default function HomePage() {
               src="/img/me.png"
               width="350"
               height="400"
-              alt="me"
+              alt="A photo of me"
             />
             <div>
               <div className="">
@@ -41,7 +67,7 @@ export default function HomePage() {
                   work to craft elevating digital experiences with a unique
                   perspective.
                   <br />
-                  <br /> Outside of software you’ll find me outdoors: up the
+                  <br /> Outside of software you’ll find me outdoors, up the
                   mountains, at the beach or in a gym.
                 </p>
                 <div className="my-5 flex justify-center lg:justify-start">
@@ -55,7 +81,7 @@ export default function HomePage() {
         </div>
       </div>
       <div className="bg-neutral-900 py-20">
-        <h1 className="mb-10 text-center text-5xl font-extrabold text-white">
+        <h1 className="mb-16 text-center text-5xl font-extrabold text-white">
           PROJECTS
         </h1>
         <div className="flex justify-center">
@@ -88,93 +114,93 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+        <div className="flex justify-center">
+          <Link
+            href="/projects"
+            className="btn btn-secondary rounded-3xl text-lg font-normal text-neutral-900"
+          >
+            View More
+          </Link>
+        </div>
       </div>
       <div className="py-20">
         <h1 className="mb-10 text-center text-5xl font-extrabold">
           GET IN TOUCH
         </h1>
         <div className="hero">
-          <div className="hero-content flex-col lg:flex-row">
+          <div className="hero-content flex-col gap-20 lg:flex-row">
             <div className="flex-col justify-center">
               <p className="text-3xl font-medium">Got an interesting idea?</p>
               <p className="mb-10 text-3xl font-medium">Lets talk about it.</p>
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="input input-bordered mb-2 w-full max-w-md text-lg text-primary placeholder-primary focus:outline-none"
-              />
-              <input
-                type="text"
-                placeholder="Email"
-                className="input input-bordered mb-2 w-full max-w-md text-lg text-primary placeholder-primary focus:outline-none"
-              />
-              <textarea
-                className="textarea textarea-bordered mb-2 w-full max-w-md text-lg text-primary placeholder-primary focus:outline-none"
-                placeholder="Your message"
-              ></textarea>
-              <div className="flex justify-center">
-                <button className="btn btn-primary rounded-3xl font-normal text-white">
-                  Send Message
-                </button>
-              </div>
+              <form>
+                <div className="flex-col justify-center">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    className="input input-bordered mb-2 w-full text-lg text-primary placeholder-primary focus:outline-none"
+                  />
+                </div>
+                <input
+                  type="text"
+                  placeholder="Email"
+                  className="input input-bordered mb-2 w-full text-lg text-primary placeholder-primary focus:outline-none"
+                />
+                <textarea
+                  className="textarea textarea-bordered textarea-lg mb-2 min-h-40 w-full px-4 py-2 text-primary placeholder-primary focus:outline-none"
+                  placeholder="Your message"
+                ></textarea>
+                <div className="flex justify-center">
+                  <button className="btn btn-disabled btn-primary mt-5 rounded-3xl font-normal text-white">
+                    Send Message
+                  </button>
+                </div>
+              </form>
             </div>
             <div>
               <div className="">
-                <h3 className="text-lg font-bold ">Contact Details</h3>
-                <p>stynesluke@gmail.com</p>
-                <h3 className="mt-5 text-lg font-bold">My Socials</h3>
-                <div className="flex">
-                  <Image
-                    className="mr-1"
-                    src="/img/github.svg"
-                    alt="GitHub Logo"
-                    width="22"
-                    height="22"
-                  />
-                  <p>GitHub</p>
-                </div>
-                <div className="flex">
-                  <Image
-                    className="mr-1"
-                    src="/img/linkedin.svg"
-                    alt="LinkedIn Logo"
-                    width="22"
-                    height="22"
-                  />
-                  <p>LinkedIn</p>
-                </div>
-                <div className="flex">
-                  <Image
-                    className="mr-1"
-                    src="/img/instagram.svg"
-                    alt="Instagram Logo"
-                    width="22"
-                    height="22"
-                  />
-                  <p>Instagram</p>
-                </div>
-                <div className="flex">
-                  <Image
-                    className="mr-1"
-                    src="/img/spotify.svg"
-                    alt="SpotifyLogo"
-                    width="22"
-                    height="22"
-                  />
-                  <p>Spotify</p>
-                </div>
-                <h3 className="mt-5 text-lg font-bold">Location</h3>
-                <div className="flex">
-                  <Image
-                    className="mr-1"
+                <h3 className="text-xl font-bold ">Contact Details</h3>
+                <IconText
+                  src="/img/email.svg"
+                  alt="Email"
+                  text="stynesluke@gmail.com"
+                  width={20}
+                  height={20}
+                />
+                <h3 className="mt-5 text-xl font-bold">My Socials</h3>
+                {socialLinks.map((link, index) => (
+                  <div className="py-2">
+                    <IconText
+                      key={index}
+                      src={link.src}
+                      alt={link.alt}
+                      text={link.text}
+                      width={20}
+                      height={20}
+                    />
+                  </div>
+                ))}
+                <h3 className="mt-5 text-xl font-bold">Location</h3>
+                <div className="py-2">
+                  <IconText
                     src="/img/location.svg"
-                    alt="Location Pin"
-                    width="22"
-                    height="22"
+                    alt="Location"
+                    text="Christchurch, New Zealand"
+                    width={20}
+                    height={20}
                   />
-                  <p>Spotify</p>
                 </div>
-                <p>TIMEZONE HERE</p>
+                <div className="py-2">
+                  <div className="flex">
+                    <Image
+                      className="mr-2"
+                      src="/img/clock.svg"
+                      alt="Clock"
+                      width="20"
+                      height="20"
+                    />
+                    <Clock />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
