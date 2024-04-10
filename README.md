@@ -1,6 +1,7 @@
 # lukestynes.dev - My Dev Portfolio
 
-![image](https://github.com/lukestynes/lukestynes.dev/assets/11674345/97fce55d-94be-48b7-a482-c53180fc7dc6)
+![CleanShot 2024-04-10 at 17 26 37@2x](https://github.com/lukestynes/lukestynes.dev/assets/11674345/8aa7a90c-b347-4e3b-a083-58517d8d807b)
+
 
 
 I created this dev portfolio to showcase my projects and work as a developer. Also to practice my front-end design skills.
