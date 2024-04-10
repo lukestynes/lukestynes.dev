@@ -68,6 +68,7 @@ export default function Navbar() {
               <Link
                 href="/contact"
                 className="btn btn-primary rounded-3xl font-medium text-white"
+                onClick={handleClick}
               >
                 Get in Touch
               </Link>
