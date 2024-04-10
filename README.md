@@ -6,7 +6,7 @@
 
 I created this dev portfolio to showcase my projects and work as a developer. Also to practice my front-end design skills.
 
-This application was created with [NextJS](https://nextjs.org/) and [DaisyUI](https://daisyui.com/))
+This application was created with [NextJS](https://nextjs.org/) and [DaisyUI](https://daisyui.com/)
 
 ## Author
 
