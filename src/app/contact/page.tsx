@@ -76,9 +76,8 @@ export default function ContactPage() {
                 />
                 <h3 className="mt-5 text-xl font-bold">My Socials</h3>
                 {socialLinks.map((link, index) => (
-                  <div className="py-2">
+                  <div key={index} className="py-2">
                     <IconText
-                      key={index}
                       src={link.src}
                       alt={link.alt}
                       text={link.text}

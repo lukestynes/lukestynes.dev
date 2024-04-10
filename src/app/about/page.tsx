@@ -20,8 +20,8 @@ export default function AboutPage() {
               <div>
                 <div className="">
                   <p className="py-6">
-                    I’m a fourth year software engineering student currently
-                    studying at the University of Canterbury based in
+                    I&apos;m a fourth year software engineering student
+                    currently studying at the University of Canterbury based in
                     Christchurch, New Zealand, with my graduation date currently
                     set to be November 2025. I have experience across a broad
                     range of subjects throughout my degree, including
@@ -42,8 +42,8 @@ export default function AboutPage() {
                     snowboarding, weightlifting, and cooking, I always have
                     something to keep me occupied. I also have a passion for
                     travel and have been lucky enough to visit many countries
-                    around the world, and I can't wait to finish my studies so I
-                    can head overseas and explore the world.
+                    around the world, and I can&apos;t wait to finish my studies
+                    so I can head overseas and explore the world.
                   </p>
                 </div>
               </div>
