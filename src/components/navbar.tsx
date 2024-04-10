@@ -1,12 +1,35 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const handleClick = () => {
+    const elem = document.activeElement as HTMLElement;
+    setDropdownOpen(false);
+
+    if (elem) {
+      elem.blur();
+    }
+  };
+
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost lg:hidden"
+            onClick={() => {
+              if (dropdownOpen) {
+                handleClick();
+              }
+              setDropdownOpen(!dropdownOpen);
+            }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -24,16 +47,22 @@ export default function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
+            className="menu dropdown-content menu-lg z-[1] mt-3 w-[calc(100vw-15px)] rounded-box bg-base-100 p-2 shadow"
           >
             <li>
-              <Link href="/about">about</Link>
+              <Link onClick={handleClick} href="/about">
+                about
+              </Link>
             </li>
             <li>
-              <Link href="/projects">projects</Link>
+              <Link onClick={handleClick} href="/projects">
+                projects
+              </Link>
             </li>
             <li>
-              <Link href="/links">links</Link>
+              <Link onClick={handleClick} href="/links">
+                links
+              </Link>
             </li>
             <li>
               <Link

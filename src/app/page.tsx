@@ -2,6 +2,7 @@ import Clock from "@/components/clock";
 import IconText from "@/components/icontext";
 import Image from "next/image";
 import Link from "next/link";
+import Lenis from "@studio-freight/lenis";
 
 const socialLinks = [
   {
@@ -29,7 +30,7 @@ const socialLinks = [
 export default function HomePage() {
   return (
     <main>
-      <div id="hero" className="hero my-10 lg:m-0 lg:min-h-screen">
+      <div id="hero" className="hero my-10 min-h-[calc(100vh-68px)] lg:m-0">
         <div className="">
           <Image src="/img/hero.svg" alt="hero" width="844" height="720" />
         </div>
@@ -44,7 +45,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="py-20">
+      <div className="py-20" id="about">
         <h1 className="mb-10 text-center text-5xl font-extrabold">ABOUT ME</h1>
         <div className="hero">
           <div className="hero-content flex-col lg:flex-row">
@@ -149,7 +150,7 @@ export default function HomePage() {
                   placeholder="Your message"
                 ></textarea>
                 <div className="flex justify-center">
-                  <button className="btn btn-primary mt-5 rounded-3xl font-normal text-white">
+                  <button className="btn btn-disabled btn-primary mt-5 rounded-3xl font-normal text-white">
                     Send Message
                   </button>
                 </div>

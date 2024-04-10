@@ -55,7 +55,7 @@ export default function ContactPage() {
                   placeholder="Your message"
                 ></textarea>
                 <div className="flex justify-center">
-                  <button className="btn btn-primary mt-5 rounded-3xl font-normal text-white">
+                  <button className="btn btn-disabled btn-primary mt-5 rounded-3xl font-normal text-white">
                     Send Message
                   </button>
                 </div>
