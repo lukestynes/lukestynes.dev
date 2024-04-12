@@ -19,11 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${GeistSans.className}`}>
-        <SmoothScrolling>
-          <Navbar />
-          {children}
-          <Footer />
-        </SmoothScrolling>
+        {/* <SmoothScrolling> */}
+        {children}
+        <Footer />
+        {/* </SmoothScrolling> */}
       </body>
     </html>
   );
