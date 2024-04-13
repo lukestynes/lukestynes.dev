@@ -145,7 +145,7 @@ export default function HomePage() {
                 </div>
               </div>
               <Link
-                href="#"
+                href="/projects/under-construction"
                 className="link-hover mt-3 text-3xl text-secondary"
               >
                 FlareSync

@@ -19,7 +19,7 @@ export default function ProjectsPage() {
               year="2023"
               tags="TypeScript - React - Tauri"
               imageSrc="/img/flaresync.jpg"
-              slug="/projects/flaresync"
+              slug="/projects/under-construction"
             />
           </div>
           <div className="col-span-2">
@@ -29,7 +29,7 @@ export default function ProjectsPage() {
               year="2023"
               tags="Java - JavaFX - Data Analysis"
               imageSrc="/img/smarttransit-dashboard.jpg"
-              slug="/projects/smarttransit-dashboard"
+              slug="/projects/under-construction"
             />
           </div>
           <div className="col-span-2">
@@ -39,7 +39,7 @@ export default function ProjectsPage() {
               year="2024"
               tags="Python - Wireless Networking - Regression Testing"
               imageSrc="none"
-              slug="/projects/smarttransit-dashboard"
+              slug="/projects/under-construction"
             />
           </div>
         </div>
