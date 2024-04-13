@@ -1,9 +1,8 @@
 import "@/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
-import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import SmoothScrolling from "@/components/smooth-scrolling";
+// import SmoothScrolling from "@/components/smooth-scrolling";
 
 export const metadata = {
   title: "Luke Stynes - Software Engineer",

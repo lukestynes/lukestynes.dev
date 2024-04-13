@@ -3,7 +3,6 @@ import Clock from "@/components/clock";
 import IconText from "@/components/icontext";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { SparklesCore } from "@/components/ui/sparkles";
 import Navbar from "@/components/navbar";
 

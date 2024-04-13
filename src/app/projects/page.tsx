@@ -1,7 +1,5 @@
 import Navbar from "@/components/navbar";
 import ProjectCard from "@/components/project-card";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function ProjectsPage() {
   return (
