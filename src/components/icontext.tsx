@@ -1,16 +1,19 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function IconText({
   src,
   alt,
   text,
+  link,
   width,
   height,
 }: {
   src: string;
   alt: string;
   text: string;
+  link: string;
   width: number;
   height: number;
 }) {
@@ -23,7 +26,9 @@ export default function IconText({
         width={width}
         height={height}
       />
-      <p>{text}</p>
+      <Link href={link} target="_blank">
+        {text}
+      </Link>
     </div>
   );
 }
