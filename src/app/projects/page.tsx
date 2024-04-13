@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import ProjectCard from "@/components/project-card";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,38 +7,40 @@ export default function ProjectsPage() {
   return (
     <div>
       <Navbar useLight={false} />
-      <main className="min-h-screen bg-neutral-900 py-10">
+      <main className="bg-dot-white/[0.15] min-h-screen bg-neutral-900 py-10">
         <h1 className="pb-10 text-center text-5xl font-extrabold text-white">
           PROJECTS
         </h1>
-        <div className="m-20 mt-0 flex justify-center">
-          <div className="card px-10 lg:w-2/3 lg:px-0">
-            <figure>
-              <Image
-                src="/img/flaresync.png"
-                alt="FlareSync application screenshot"
-                width="2000"
-                height="1000"
-              />
-            </figure>
-            <div className="card-body px-0">
-              <div id="badges" className="flex">
-                <div className="mr-3 rounded-3xl border border-secondary px-3 py-1 font-normal text-secondary">
-                  2023
-                </div>
-                <div className="rounded-3xl border border-secondary px-3 py-1 font-normal text-secondary">
-                  Typescript - React - Tauri
-                </div>
-              </div>
-              <Link
-                href="#"
-                className="link-hover mt-3 text-3xl text-secondary"
-              >
-                FlareSync
-              </Link>
-              <p className="text-secondary">Desktop Application - API</p>
-              <div className="card-actions justify-end"></div>
-            </div>
+        <div className="m-20 mt-0 grid grid-cols-5 justify-center gap-5">
+          <div className="col-span-3 row-span-2">
+            <ProjectCard
+              title="FlareSync"
+              subtitle="A tool to sync MadCap Flare documentation with Confluence"
+              year="2023"
+              tags="TypeScript - React - Tauri"
+              imageSrc="/img/flaresync.jpg"
+              slug="/projects/flaresync"
+            />
+          </div>
+          <div className="col-span-2">
+            <ProjectCard
+              title="SmartTransit Dasboard"
+              subtitle="Advanced NZTA crash data visualiser with table, map, and graph views"
+              year="2023"
+              tags="Java - JavaFX - Data Analysis"
+              imageSrc="/img/smarttransit-dashboard.jpg"
+              slug="/projects/smarttransit-dashboard"
+            />
+          </div>
+          <div className="col-span-2">
+            <ProjectCard
+              title="Wireless Router Testing Automation"
+              subtitle="Advanced NZTA crash data visualiser with table, map, and graph views"
+              year="2024"
+              tags="Python - Wireless Networking - Regression Testing"
+              imageSrc="none"
+              slug="/projects/smarttransit-dashboard"
+            />
           </div>
         </div>
       </main>

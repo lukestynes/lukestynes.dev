@@ -44,8 +44,8 @@ export default function HomePage() {
             id="tsparticlesfullpage"
             background="transparent"
             minSize={0.6}
-            maxSize={1.4}
-            particleDensity={50}
+            maxSize={2.4}
+            particleDensity={60}
             className="h-full w-full"
             particleColor="#262626"
           />
@@ -119,21 +119,23 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="bg-dot-white/[0.15] bg-neutral-900 py-20" id="projects">
+      <div className="bg-dot-white/[0.15] bg-neutral-900 py-10" id="projects">
         <h1 className="mb-16 text-center text-5xl font-extrabold text-white">
           PROJECTS
         </h1>
         <div className="flex justify-center">
-          <div className="card px-10 lg:w-2/3 lg:px-0">
-            <figure>
+          <div className="card border border-neutral-800 bg-neutral-900 p-3 px-3 lg:w-1/2">
+            <figure className="flex flex-col">
               <Image
                 src="/img/flaresync.jpg"
+                className="rounded-xl"
                 alt="FlareSync application screenshot"
                 width="2000"
-                height="2000"
+                height="1000"
               />
+              {/* <p className="align-left w-full pt-3 text-secondary">Featured</p> */}
             </figure>
-            <div className="card-body px-0">
+            <div className="card-body px-0 py-0 pt-5">
               <div id="badges" className="flex">
                 <div className="mr-3 rounded-3xl border border-secondary px-3 py-1 font-normal text-secondary">
                   2023
@@ -149,14 +151,13 @@ export default function HomePage() {
                 FlareSync
               </Link>
               <p className="text-secondary">Desktop Application - API</p>
-              <div className="card-actions justify-end"></div>
             </div>
           </div>
         </div>
         <div className="flex justify-center">
           <Link
             href="/projects"
-            className="btn btn-secondary rounded-3xl text-lg font-normal text-neutral-900"
+            className="btn btn-secondary mt-10 rounded-3xl text-lg font-normal text-neutral-900"
           >
             View More
           </Link>
@@ -200,7 +201,7 @@ export default function HomePage() {
             </div>
             <div>
               <div className="">
-                <h2 className="mb-10 text-3xl font-bold lg:hidden">
+                <h2 className="mb-10 text-center text-3xl font-bold lg:hidden">
                   MY DETAILS
                 </h2>
                 <h3 className="text-xl font-bold ">Contact Details</h3>
