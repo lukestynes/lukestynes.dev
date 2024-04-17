@@ -60,7 +60,7 @@ export default function HomePage() {
         </h1>
       </div> */}
 
-      <div className="bg-grid-black/[0.05] bg-primary py-52 text-white">
+      <div className="bg-primary py-52 text-white bg-grid-black/[0.05]">
         <div className="max-w-screen">
           <div className="mx-20 max-w-5xl lg:mx-auto">
             <h1 className="text-4xl font-bold md:text-5xl">
@@ -118,7 +118,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="bg-dot-white/[0.15] bg-neutral-900 py-10" id="projects">
+      <div className="bg-neutral-900 py-10 bg-dot-white/[0.15]" id="projects">
         <h1 className="mb-16 text-center text-5xl font-extrabold text-white">
           PROJECTS
         </h1>
