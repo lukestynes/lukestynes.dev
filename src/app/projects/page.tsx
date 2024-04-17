@@ -5,7 +5,7 @@ export default function ProjectsPage() {
   return (
     <div>
       <Navbar useLight={false} />
-      <main className="bg-dot-white/[0.15] min-h-screen bg-neutral-900 py-10">
+      <main className="min-h-screen bg-neutral-900 py-10 bg-dot-white/[0.15]">
         <h1 className="pb-10 text-center text-5xl font-extrabold text-white">
           PROJECTS
         </h1>
@@ -33,7 +33,7 @@ export default function ProjectsPage() {
           <div className="col-span-2">
             <ProjectCard
               title="Wireless Router Testing Automation"
-              subtitle="Advanced NZTA crash data visualiser with table, map, and graph views"
+              subtitle="Automated regression testing of wireless routers using custom frameworks. Work Project."
               year="2024"
               tags="Python - Wireless Networking - Regression Testing"
               imageSrc="none"
