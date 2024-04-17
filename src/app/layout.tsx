@@ -3,6 +3,7 @@ import "@/styles/globals.css";
 import { GeistSans } from "geist/font/sans";
 import Footer from "@/components/footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 // import SmoothScrolling from "@/components/smooth-scrolling";
 
 export const metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${GeistSans.className}`}>
         <SpeedInsights />
+        <Analytics />
         {/* <SmoothScrolling> */}
         {children}
         <Footer />
