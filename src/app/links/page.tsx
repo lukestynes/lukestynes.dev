@@ -51,12 +51,11 @@ export default function Links() {
       <div className="mx-auto max-w-md px-5 py-10">
         <div>
           <h1 className="pb-3 text-center text-3xl font-bold">
-            Kia Ora, I'm Luke
+            Kia Ora, I&apos;m Luke
           </h1>
           <p>
-            I make videos on the internet sometimes and build projects
-            sometimes. You're probably looking for something you saw in one of
-            my videos or on my website. Hopefully you find it below.
+            Software Engineering student with a passion for innovation, personal
+            development, and productivity. Check out my links below.
           </p>
         </div>
         <div className="flex justify-center gap-5 pt-5">

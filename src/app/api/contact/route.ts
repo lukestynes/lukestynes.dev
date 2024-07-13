@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
     if (!data.name || !data.email || !data.message) {
       console.log("Validation wrong");
       console.log(
-        `Name: ${data.name} Email: ${data.email} Type: ${data.messageType} Tour: ${data.tour} Message: ${data.message}`,
+        `Name: ${data.name} Email: ${data.email} Message: ${data.message}`,
       );
       throw new Error("Not all fields are filled out");
     }
