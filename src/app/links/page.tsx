@@ -54,8 +54,8 @@ export default function Links() {
             Kia Ora, I&apos;m Luke
           </h1>
           <p>
-            Software Engineering student with a passion for innovation, personal
-            development, and productivity. Check out my links below.
+            A Software Engineering student with a passion for innovation,
+            personal development, and productivity. Check out my links below.
           </p>
         </div>
         <div className="flex justify-center gap-5 pt-5">
