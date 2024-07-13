@@ -24,7 +24,6 @@ export default function RootLayout({
         <Analytics />
         {/* <SmoothScrolling> */}
         {children}
-        <Footer />
         {/* </SmoothScrolling> */}
       </body>
     </html>

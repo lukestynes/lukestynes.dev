@@ -1,10 +1,11 @@
-"use client";
 import Clock from "@/components/clock";
 import IconText from "@/components/icontext";
 import Image from "next/image";
 import Link from "next/link";
 import { SparklesCore } from "@/components/ui/sparkles";
 import Navbar from "@/components/navbar";
+import ContactForm from "@/components/ContactForm";
+import Footer from "@/components/footer";
 
 const socialLinks = [
   {
@@ -167,36 +168,11 @@ export default function HomePage() {
           GET IN TOUCH
         </h1>
         <div className="hero">
-          <div className="hero-content flex-col gap-20 lg:flex-row">
+          <div className="hero-content max-w-6xl flex-col gap-20 lg:flex-row">
             <div className="flex-col justify-center">
               <p className="text-3xl font-medium">Got an interesting idea?</p>
               <p className="mb-10 text-3xl font-medium">Lets talk about it.</p>
-              <form>
-                <div className="flex-col justify-center">
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    className="input input-bordered mb-2 w-full text-lg text-primary placeholder-primary focus:outline-none"
-                  />
-                </div>
-                <input
-                  type="text"
-                  placeholder="Email"
-                  className="input input-bordered mb-2 w-full text-lg text-primary placeholder-primary focus:outline-none"
-                />
-                <textarea
-                  className="textarea textarea-bordered textarea-lg mb-2 min-h-40 w-full px-4 py-2 text-primary placeholder-primary focus:outline-none"
-                  placeholder="Your message"
-                ></textarea>
-                <p className="text-neutral-400">
-                  N.B.: Form is not yet functioning
-                </p>
-                <div className="flex justify-center">
-                  <button className="btn btn-disabled btn-primary mt-5 rounded-3xl font-normal text-white">
-                    Send Message
-                  </button>
-                </div>
-              </form>
+              <ContactForm />
             </div>
             <div>
               <div className="">
@@ -254,6 +230,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }

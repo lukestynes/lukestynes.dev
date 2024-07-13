@@ -108,5 +108,6 @@ export default {
         },
       },
     ],
+    logs: false,
   },
 } satisfies Config;
