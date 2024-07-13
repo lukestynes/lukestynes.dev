@@ -1,6 +1,4 @@
 import CustomLink from "@/components/custom-link";
-import { Boxes } from "@/components/ui/background-boxes";
-import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 import Image from "next/image";
 import Link from "next/link";
 
